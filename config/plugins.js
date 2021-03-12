@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-  // ...
   email: {
     provider: "sendgrid",
     providerOptions: {
@@ -10,5 +9,4 @@ module.exports = ({ env }) => ({
       defaultReplyTo: env("SENDGRID_AUTH_EMAIL"),
     },
   },
-  // ...
 });
