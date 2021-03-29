@@ -13,7 +13,6 @@
     "username": {
       "type": "string",
       "minLength": 3,
-      "unique": true,
       "configurable": false,
       "required": true
     },
@@ -59,9 +58,9 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "blogs": {
-      "via": "users_permissions_user",
-      "collection": "post"
+    "posts": {
+      "collection": "post",
+      "via": "users_permissions_user"
     }
   }
 }

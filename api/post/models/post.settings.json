@@ -33,11 +33,6 @@
       "plugin": "upload",
       "required": false
     },
-    "users_permissions_user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "blogs"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -45,6 +40,11 @@
     },
     "tag": {
       "type": "json"
+    },
+    "users_permissions_user": {
+      "via": "posts",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
