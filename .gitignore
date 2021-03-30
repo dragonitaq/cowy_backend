@@ -113,3 +113,7 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+# Strapi specific to ignore this file during deployment to Heroku. Origin message: "Even if it is usually recommended to version this file, it may create issues on Heroku."
+
+package-lock.json
